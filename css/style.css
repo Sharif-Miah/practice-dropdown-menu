@@ -1,0 +1,45 @@
+nav>ul {
+    display: flex;
+    /* margin: 0 auto; */
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 0 10px;
+    margin-left: 0;
+}
+
+nav ul li:hover {
+    background-color: lightgray;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #222;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: yellowgreen;
+    /* margin-left: 0; */
+    padding-left: 0;
+}
+
+
+nav ul li ul li:hover .dpMenu {
+    display: block;
+}
+
+nav ul li ul li .dpMenu {
+    display: none;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: -20px;
+}
